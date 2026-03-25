@@ -1,198 +1,411 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ralph Waldo Emerson - Transcendentalism</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ralph Waldo Emerson & Transcendentalism</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Navigation Bar -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="logo">Emerson & Transcendentalism</div>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#philosophy">Philosophy</a></li>
-                <li><a href="#works">Works</a></li>
-                <li><a href="#legacy">Legacy</a></li>
-            </ul>
+
+<!-- ═══════════════════════════════════════════
+     NAVBAR
+════════════════════════════════════════════ -->
+<nav class="navbar" id="navbar">
+  <a href="#hero" class="nav-brand">R.W. Emerson</a>
+  <div class="nav-toggle" id="navToggle">
+    <span></span><span></span><span></span>
+  </div>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#biography">Biography</a></li>
+    <li><a href="#timeline">Timeline</a></li>
+    <li><a href="#beliefs">Beliefs</a></li>
+    <li><a href="#reform">Reform</a></li>
+    <li><a href="#legacy">Legacy</a></li>
+    <li><a href="#works">Works Consulted</a></li>
+  </ul>
+</nav>
+
+<!-- ═══════════════════════════════════════════
+     HERO
+════════════════════════════════════════════ -->
+<section class="hero" id="hero">
+  <div class="hero-leaves">
+    <div class="leaf"></div>
+    <div class="leaf"></div>
+    <div class="leaf"></div>
+    <div class="leaf"></div>
+    <div class="leaf"></div>
+  </div>
+
+  <p class="hero-ornament reveal">A Study in American Thought</p>
+  <h1 class="reveal reveal-delay-1">
+    Ralph Waldo<br>
+    <em>Emerson</em>
+  </h1>
+  <div class="hero-divider reveal reveal-delay-2"></div>
+  <p class="hero-subtitle reveal reveal-delay-3">
+    The father of American literature and the intellectual force behind one of history's most transformative philosophical movements
+  </p>
+  <p class="hero-dates reveal reveal-delay-4">May 25, 1803 &ensp;—&ensp; April 27, 1882</p>
+  <div class="scroll-cue">SCROLL</div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     PULL QUOTE
+════════════════════════════════════════════ -->
+<div class="pull-quote-section">
+  <blockquote class="fade-in-section">
+    Individuals should not study nature as if it were an object, but experience it as if it were a living spirit.
+  </blockquote>
+  <p class="quote-attr fade-in-section">— Core Transcendentalist Belief <span class="cite" title="Hankins, The Second Great Awakening and the Transcendentalists">(Hankins)</span></p>
+</div>
+
+<!-- ═══════════════════════════════════════════
+     BIOGRAPHY
+════════════════════════════════════════════ -->
+<section class="section" id="biography">
+
+  <!-- IMAGE PLACEHOLDER: Portrait of Emerson -->
+  <div class="img-placeholder img-placeholder--full fade-in-section">
+    <span>[ Add Image Here: Portrait of Ralph Waldo Emerson ]</span>
+  </div>
+
+  <p class="section-label fade-in-section">The Man Behind the Movement</p>
+  <h2 class="section-title fade-in-section">Life &amp; Origins</h2>
+
+  <div class="two-col">
+    <div>
+      <p class="fade-in-section">
+        Ralph Waldo Emerson was born in Boston on May 25, 1803, into a distinguished New England family whose roots stretched back to the very first settlers of America — a long line of ministers who shaped his early worldview <span class="cite" title="Myerson, A Historical Guide to Ralph Waldo Emerson">(Myerson)</span>. His father preached Unitarianism, a faith that would inform, and later be challenged by, Emerson's own spiritual evolution <span class="cite" title="McGuire & Wheeler, American History, ABC-CLIO">(McGuire &amp; Wheeler)</span>.
+      </p>
+      <p class="fade-in-section">
+        Educated at the Boston Public Latin School and Harvard, Emerson eventually accepted a pastorate at the Second Church of Boston <span class="cite" title="McGuire & Wheeler, American History, ABC-CLIO">(McGuire &amp; Wheeler)</span>. But tragedy struck when his wife, Ellen Tucker, died of tuberculosis. Grief-stricken and spiritually unsettled, Emerson resigned from his post and began questioning his most fundamental beliefs <span class="cite" title="McGuire & Wheeler, American History, ABC-CLIO">(McGuire &amp; Wheeler)</span>.
+      </p>
+      <p class="fade-in-section">
+        When Emerson was born, the United States was barely three decades old — home to roughly 6 million people. By his death in 1882, that number had swelled to 52 million, a period of breathtaking national transformation through which Emerson remained a guiding intellectual voice <span class="cite" title="Myerson, A Historical Guide to Ralph Waldo Emerson">(Myerson)</span>.
+      </p>
+    </div>
+
+    <div>
+      <!-- IMAGE PLACEHOLDER: Young America / Boston 1800s -->
+      <div class="img-placeholder fade-in-section">
+        <span>[ Add Image Here: Boston or New England c. 1800s ]</span>
+      </div>
+
+      <div class="highlight-box fade-in-section">
+        "When Emerson was born, America was not even a country for three decades. He grew alongside a rapidly expanding nation — a professional author and lecturer who helped define what it meant to be American."
+        <span class="cite" title="Myerson, A Historical Guide to Ralph Waldo Emerson">(Myerson)</span>
+      </div>
+
+      <p class="fade-in-section">
+        At the time, America was culturally dependent on Europe, and a young nation had yet to carve out its own intellectual and artistic identity. Emerson became the man who would change that — pushing back against inherited European tradition and urging Americans to think, write, and live on their own terms <span class="cite" title="McGuire & Wheeler, American History, ABC-CLIO">(McGuire &amp; Wheeler)</span>.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     TIMELINE
+════════════════════════════════════════════ -->
+<div class="timeline-section" id="timeline">
+  <div class="timeline-inner">
+    <p class="section-label fade-in-section">Milestones</p>
+    <h2 class="section-title fade-in-section">A Life in Time</h2>
+
+    <div class="timeline">
+
+      <div class="timeline-item fade-in-section">
+        <div class="timeline-dot"><div class="timeline-dot-inner"></div></div>
+        <div class="timeline-content">
+          <p class="timeline-year">1803</p>
+          <p class="timeline-event">Born in Boston, Massachusetts</p>
+          <p class="timeline-desc">Born May 25th into a family with deep roots among New England's first settlers and a long lineage of ministers <span class="cite" title="Myerson, A Historical Guide to Ralph Waldo Emerson">(Myerson)</span>.</p>
         </div>
-    </nav>
+      </div>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-content fade-in">
-            <h1>Ralph Waldo Emerson</h1>
-            <p class="subtitle">The Voice of American Transcendentalism</p>
-            <button class="cta-button">Explore His Legacy</button>
+      <div class="timeline-item fade-in-section">
+        <div class="timeline-dot"><div class="timeline-dot-inner"></div></div>
+        <div class="timeline-content">
+          <p class="timeline-year">Early Education</p>
+          <p class="timeline-event">Boston Latin School &amp; Harvard</p>
+          <p class="timeline-desc">Attended two of New England's most prestigious institutions, including Harvard Divinity School, shaping his theological and philosophical foundations <span class="cite" title="McGuire & Wheeler, American History, ABC-CLIO">(McGuire &amp; Wheeler)</span>.</p>
         </div>
-        <div class="hero-image">
-            <div class="image-placeholder">
-                <p>[Hero Image: Portrait or Related Imagery]</p>
-            </div>
+      </div>
+
+      <div class="timeline-item fade-in-section">
+        <div class="timeline-dot"><div class="timeline-dot-inner"></div></div>
+        <div class="timeline-content">
+          <p class="timeline-year">1836</p>
+          <p class="timeline-event">Nature Published &amp; Transcendentalist Club Founded</p>
+          <p class="timeline-desc">Emerson published <em>Nature</em>, described as a virtual manifesto for Transcendentalism. That same September, the Transcendentalist Club was founded in Boston by a group of like-minded thinkers <span class="cite" title="Hankins, The Second Great Awakening and the Transcendentalists">(Hankins)</span>.</p>
         </div>
-    </section>
+      </div>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <h2 class="section-title slide-in">About Ralph Waldo Emerson</h2>
-            <div class="about-grid">
-                <div class="about-text fade-in-up">
-                    <p>Ralph Waldo Emerson (1803-1882) was an American essayist, lecturer, philosophical idealist, and poet who led the transcendentalist movement of the mid-19th century. His works challenged conventional thinking and inspired generations of thinkers and writers.</p>
-                    <p>Born in Boston, Massachusetts, Emerson initially pursued a career in the ministry but eventually left the church to pursue his own philosophical investigations. His departure marked the beginning of a remarkable intellectual journey that would reshape American thought.</p>
-                    <p>Throughout his life, Emerson delivered lectures, published essays, and wrote poetry that explored themes of nature, self-reliance, and the relationship between the individual and society. His ideas were revolutionary for his time and continue to resonate today.</p>
-                </div>
-                <div class="about-image">
-                    <div class="image-placeholder">
-                        <p>[Bio Image: Portrait or Historical Photo]</p>
-                    </div>
-                </div>
-            </div>
+      <div class="timeline-item fade-in-section">
+        <div class="timeline-dot"><div class="timeline-dot-inner"></div></div>
+        <div class="timeline-content">
+          <p class="timeline-year">1837</p>
+          <p class="timeline-event">Harvard Divinity School Address</p>
+          <p class="timeline-desc">Emerson delivered his celebrated address at Harvard, voicing ideas so controversial that he was not invited back for 30 years. He argued that all humans, not just God, were capable of divine inspiration <span class="cite" title="McGuire & Wheeler, American History, ABC-CLIO">(McGuire &amp; Wheeler)</span> <span class="cite" title="Hankins, The Second Great Awakening and the Transcendentalists">(Hankins)</span>.</p>
         </div>
-    </section>
+      </div>
 
-    <!-- Philosophy Section -->
-    <section id="philosophy" class="philosophy">
-        <div class="container">
-            <h2 class="section-title slide-in">Transcendentalism Philosophy</h2>
-            <p class="section-intro">Emerson's philosophical approach centered on several key principles that defined American Transcendentalism.</p>
-            
-            <div class="philosophy-cards">
-                <div class="card fade-in-up" style="animation-delay: 0s;">
-                    <div class="card-icon">🌍</div>
-                    <h3>Nature and Spirituality</h3>
-                    <p>Emerson believed nature is a manifestation of the divine. Through observation of the natural world, individuals can achieve spiritual enlightenment and connect with universal truth. He saw nature as a teacher and a source of wisdom.</p>
-                </div>
-                
-                <div class="card fade-in-up" style="animation-delay: 0.1s;">
-                    <div class="card-icon">💪</div>
-                    <h3>Self-Reliance</h3>
-                    <p>One of Emerson's most influential concepts, self-reliance emphasizes individual independence and the importance of trusting one's own instincts and intuition. He believed each person possesses inherent wisdom and should not conform blindly to society.</p>
-                </div>
-                
-                <div class="card fade-in-up" style="animation-delay: 0.2s;">
-                    <div class="card-icon">🧠</div>
-                    <h3>Intuition and Reason</h3>
-                    <p>Emerson exalted intuition as a means of understanding truth, often placing it above rational analysis. He argued that direct experience and inner conviction provide deeper insight than intellectual reasoning alone.</p>
-                </div>
-                
-                <div class="card fade-in-up" style="animation-delay: 0.3s;">
-                    <div class="card-icon">✨</div>
-                    <h3>The Over-Soul</h3>
-                    <p>Central to Emerson's thought is the concept of the Over-Soul, a universal spiritual force that connects all beings. This divine essence permeates nature and human consciousness, making all individuals part of something greater.</p>
-                </div>
-            </div>
-
-            <div class="philosophy-image">
-                <div class="image-placeholder">
-                    <p>[Philosophy Image: Nature Scene or Conceptual Art]</p>
-                </div>
-            </div>
+      <div class="timeline-item fade-in-section">
+        <div class="timeline-dot"><div class="timeline-dot-inner"></div></div>
+        <div class="timeline-content">
+          <p class="timeline-year">Mid-1800s</p>
+          <p class="timeline-event">Sparking the American Renaissance</p>
+          <p class="timeline-desc">Emerson's mentorship and leadership inspired a generation of great American writers — including Thoreau, Hawthorne, Whitman, and Fuller — igniting the American Renaissance in literature <span class="cite" title="McGuire & Wheeler, American History, ABC-CLIO">(McGuire &amp; Wheeler)</span>.</p>
         </div>
-    </section>
+      </div>
 
-    <!-- Key Works Section -->
-    <section id="works" class="works">
-        <div class="container">
-            <h2 class="section-title slide-in">Notable Works</h2>
-            <p class="section-intro">Emerson's most influential essays and writings that shaped transcendentalist thought.</p>
-            
-            <div class="works-grid">
-                <div class="work-item fade-in-up">
-                    <div class="work-image">
-                        <div class="image-placeholder">
-                            <p>[Book Cover 1]</p>
-                        </div>
-                    </div>
-                    <h3>Nature (1836)</h3>
-                    <p>His groundbreaking essay that introduced many core transcendentalist ideas. Emerson explores the relationship between humans and the natural world, arguing that nature provides spiritual renewal and insight into universal truth.</p>
-                </div>
-
-                <div class="work-item fade-in-up">
-                    <div class="work-image">
-                        <div class="image-placeholder">
-                            <p>[Book Cover 2]</p>
-                        </div>
-                    </div>
-                    <h3>Self-Reliance (1841)</h3>
-                    <p>Perhaps his most famous work, this essay champions individualism and nonconformity. Emerson urges readers to trust themselves, resist societal pressure, and follow their own intuition and convictions.</p>
-                </div>
-
-                <div class="work-item fade-in-up">
-                    <div class="work-image">
-                        <div class="image-placeholder">
-                            <p>[Book Cover 3]</p>
-                        </div>
-                    </div>
-                    <h3>The American Scholar (1837)</h3>
-                    <p>An important address delivered at Harvard, this work defines the role and responsibility of American intellectuals. Emerson calls for intellectual independence and the development of distinctly American thought and culture.</p>
-                </div>
-
-                <div class="work-item fade-in-up">
-                    <div class="work-image">
-                        <div class="image-placeholder">
-                            <p>[Book Cover 4]</p>
-                        </div>
-                    </div>
-                    <h3>Essays: First Series (1841)</h3>
-                    <p>A collection including essays on various aspects of transcendentalist philosophy. Topics range from history and compensation to spiritual matters, showcasing the breadth of Emerson's intellectual interests and insights.</p>
-                </div>
-            </div>
+      <div class="timeline-item fade-in-section">
+        <div class="timeline-dot"><div class="timeline-dot-inner"></div></div>
+        <div class="timeline-content">
+          <p class="timeline-year">1882</p>
+          <p class="timeline-event">Death &amp; Enduring Legacy</p>
+          <p class="timeline-desc">Emerson died April 27th, universally recognized as the father of American literature. His educational ideas had already influenced Harvard president Charles W. Eliot, and his broader philosophy continues to shape American culture <span class="cite" title="Myerson, A Historical Guide to Ralph Waldo Emerson">(Myerson)</span>.</p>
         </div>
-    </section>
+      </div>
 
-    <!-- Legacy Section -->
-    <section id="legacy" class="legacy">
-        <div class="container">
-            <h2 class="section-title slide-in">Lasting Legacy</h2>
-            <div class="legacy-grid">
-                <div class="legacy-item fade-in-up">
-                    <h3>Literary Influence</h3>
-                    <p>Emerson's ideas profoundly influenced major American writers and thinkers including Henry David Thoreau, Walt Whitman, and Margaret Fuller. His essays set a standard for American literary expression and continue to be studied in universities worldwide.</p>
-                </div>
-                
-                <div class="legacy-item fade-in-up">
-                    <h3>Social Movements</h3>
-                    <p>Transcendentalism, through Emerson's teachings, inspired various social reform movements of the 19th century. His emphasis on individual conscience contributed to abolitionist, women's rights, and temperance movements.</p>
-                </div>
-                
-                <div class="legacy-item fade-in-up">
-                    <h3>Modern Philosophy</h3>
-                    <p>Emerson's ideas resonate in contemporary philosophy, psychology, and spirituality. His concepts of self-actualization, intuitive knowledge, and the interconnectedness of all things anticipated modern understandings of human potential and consciousness.</p>
-                </div>
-                
-                <div class="legacy-item fade-in-up">
-                    <h3>Educational Impact</h3>
-                    <p>His belief in education as a means of self-discovery and empowerment continues to influence educational philosophy. Schools and educators worldwide draw on Emerson's ideas about fostering creativity and critical thinking.</p>
-                </div>
-            </div>
+    </div>
+  </div>
+</div>
 
-            <div class="legacy-featured">
-                <div class="featured-image">
-                    <div class="image-placeholder">
-                        <p>[Legacy Image: Monument, Bust, or Commemorative Site]</p>
-                    </div>
-                </div>
-                <div class="featured-text">
-                    <h3>A Living Legacy</h3>
-                    <p>Ralph Waldo Emerson passed away in 1882, but his legacy endures. His writings remain widely read and continue to inspire individuals seeking meaning, independence, and connection to nature. Annual lectures, academic programs, and cultural institutions dedicated to Emerson's work keep his ideas vibrant and relevant.</p>
-                    <p>Today, as people grapple with questions about authenticity, individualism, and our place in the world, Emerson's transcendentalist philosophy offers timeless wisdom and guidance for living a purposeful life aligned with one's values and convictions.</p>
-                </div>
-            </div>
+<!-- ═══════════════════════════════════════════
+     BELIEFS — FLIP CARDS
+════════════════════════════════════════════ -->
+<div class="cards-section" id="beliefs">
+  <div class="cards-inner">
+    <p class="section-label fade-in-section">The Philosophy</p>
+    <h2 class="section-title cards-title fade-in-section">Core Beliefs of Transcendentalism</h2>
+    <p class="cards-intro fade-in-section">
+      Founded September 19, 1836 in Boston, the Transcendentalist Club gathered some of the era's boldest thinkers — united by a conviction that conventional life fell far short of what was possible <span class="cite" title="Hankins, The Second Great Awakening and the Transcendentalists">(Hankins)</span>. Hover each card to reveal the belief.
+    </p>
+
+    <div class="cards-grid">
+
+      <div class="card fade-in-section">
+        <div class="card-inner">
+          <div class="card-front">
+            <div class="card-icon-shape">I</div>
+            <h3 class="card-title">Nature as the Divine</h3>
+            <p class="card-hint">HOVER TO REVEAL</p>
+          </div>
+          <div class="card-back">
+            <p class="card-title-back">Nature as the Divine</p>
+            <p>Transcendentalists believed nature was very much like God — a universal spirit that communicates through the natural world. To know nature was to draw closer to the divine. Individuals should not study nature as an object, but experience it as a living spirit <span class="cite" title="Hankins, The Second Great Awakening and the Transcendentalists">(Hankins)</span>.</p>
+          </div>
         </div>
-    </section>
+      </div>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2026 Ralph Waldo Emerson & Transcendentalism Resource. All rights reserved.</p>
-            <p>This site is an educational resource dedicated to the life and work of Ralph Waldo Emerson.</p>
+      <div class="card fade-in-section">
+        <div class="card-inner">
+          <div class="card-front">
+            <div class="card-icon-shape">II</div>
+            <h3 class="card-title">Individual Divinity</h3>
+            <p class="card-hint">HOVER TO REVEAL</p>
+          </div>
+          <div class="card-back">
+            <p class="card-title-back">Individual Divinity</p>
+            <p>Emerson declared that all people are capable of divine inspiration — not just the clergy or the faithful. Every human soul carried within it the spark of something greater. This bold claim led to accusations of atheism and naturalizing religion <span class="cite" title="Hankins, The Second Great Awakening and the Transcendentalists">(Hankins)</span>.</p>
+          </div>
         </div>
-    </footer>
+      </div>
 
-    <script src="script.js"></script>
+      <div class="card fade-in-section">
+        <div class="card-inner">
+          <div class="card-front">
+            <div class="card-icon-shape">III</div>
+            <h3 class="card-title">Inner Moral Law</h3>
+            <p class="card-hint">HOVER TO REVEAL</p>
+          </div>
+          <div class="card-back">
+            <p class="card-title-back">Inner Moral Law</p>
+            <p>Emerson encouraged people to follow their own inner moral law, even when that meant going against popular opinion, convention, or authority. He believed individuals were capable of determining right and wrong for themselves <span class="cite" title="Myerson, A Historical Guide to Ralph Waldo Emerson">(Myerson)</span>.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card fade-in-section">
+        <div class="card-inner">
+          <div class="card-front">
+            <div class="card-icon-shape">IV</div>
+            <h3 class="card-title">Equality of All Souls</h3>
+            <p class="card-hint">HOVER TO REVEAL</p>
+          </div>
+          <div class="card-back">
+            <p class="card-title-back">Equality of All Souls</p>
+            <p>Transcendentalism praised the divine equality of every soul and held that all people deserve social and political equality. This belief united the movement around abolition and women's rights, especially when the Fugitive Slave Law was passed <span class="cite" title="Gura, Transcendentalism and Social Reform, Gilderlehrman.org">(Gura)</span>.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card fade-in-section">
+        <div class="card-inner">
+          <div class="card-front">
+            <div class="card-icon-shape">V</div>
+            <h3 class="card-title">Beyond Mundane Rules</h3>
+            <p class="card-hint">HOVER TO REVEAL</p>
+          </div>
+          <div class="card-back">
+            <p class="card-title-back">Beyond Mundane Rules</p>
+            <p>Transcendentalists wanted a greater, deeper experience from life instead of simply living by mundane social rules — seeking a quiet, individualistic oneness with nature and the universe rather than conforming to society's expectations <span class="cite" title="Hankins, The Second Great Awakening and the Transcendentalists">(Hankins)</span>.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card fade-in-section">
+        <div class="card-inner">
+          <div class="card-front">
+            <div class="card-icon-shape">VI</div>
+            <h3 class="card-title">Self Before Society</h3>
+            <p class="card-hint">HOVER TO REVEAL</p>
+          </div>
+          <div class="card-back">
+            <p class="card-title-back">Self Before Society</p>
+            <p>Emerson believed self-reform must come before social reform — a stance that drew criticism from fellow Transcendentalists who wanted more direct activism. He declined to join Brook Farm, preferring personal development and mentorship over communal action <span class="cite" title="Gura, Transcendentalism and Social Reform, Gilderlehrman.org">(Gura)</span>.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════
+     REFORM & ADVOCACY
+════════════════════════════════════════════ -->
+<section class="section" id="reform">
+  <p class="section-label fade-in-section">Advocacy &amp; Action</p>
+  <h2 class="section-title fade-in-section">Fighting for a Better America</h2>
+
+  <div class="two-col">
+    <div>
+      <p class="fade-in-section">
+        Although Emerson's primary focus was on personal and spiritual development, he was deeply engaged with the great social struggles of the 19th century <span class="cite" title="Myerson, A Historical Guide to Ralph Waldo Emerson">(Myerson)</span>. He publicly opposed the Fugitive Slave Act and advocated for equality for women <span class="cite" title="McGuire & Wheeler, American History, ABC-CLIO">(McGuire &amp; Wheeler)</span>, voicing his support in lectures and essays that reached a wide audience.
+      </p>
+      <p class="fade-in-section">
+        He also supported the concept of "free soil" — stopping the spread of slavery into new territories and favoring gradual emancipation. He approved of Northern efforts to protect enslaved individuals, aligning himself clearly on the moral questions of his era <span class="cite" title="Myerson, A Historical Guide to Ralph Waldo Emerson">(Myerson)</span>.
+      </p>
+      <p class="fade-in-section">
+        When the Fugitive Slave Law was passed, Transcendentalists united especially strongly around the cause of abolition, with their shared belief in the divine equality of all souls giving the movement a powerful moral foundation <span class="cite" title="Gura, Transcendentalism and Social Reform, Gilderlehrman.org">(Gura)</span>.
+      </p>
+
+      <!-- IMAGE PLACEHOLDER: Anti-slavery movement -->
+      <div class="img-placeholder fade-in-section">
+        <span>[ Add Image Here: Abolitionist movement or Fugitive Slave Act era ]</span>
+      </div>
+    </div>
+
+    <div>
+      <p class="fade-in-section">
+        Yet Emerson's strategy was distinctive. Rather than joining activist communities — he famously declined an invitation to join Brook Farm, the Transcendentalist commune founded by George Ripley <span class="cite" title="Gura, Transcendentalism and Social Reform, Gilderlehrman.org">(Gura)</span> — he chose to work through <em>mentorship</em>, training protégés who would carry his ideas forward into the world <span class="cite" title="Gura, Transcendentalism and Social Reform, Gilderlehrman.org">(Gura)</span>.
+      </p>
+      <p class="fade-in-section">
+        This drew criticism even from fellow Transcendentalists, who felt his intense focus on individualism could produce unintended consequences like ego, and that he was not doing enough for direct social reform <span class="cite" title="Gura, Transcendentalism and Social Reform, Gilderlehrman.org">(Gura)</span>. It revealed a fundamental split within the movement: some sought inner transformation, others demanded outward action.
+      </p>
+
+      <div class="highlight-box fade-in-section">
+        Ripley specifically sought Emerson's involvement in Brook Farm because his participation would have drawn enormous public attention — a testament to how central Emerson had become to the movement <span class="cite" title="Gura, Transcendentalism and Social Reform, Gilderlehrman.org">(Gura)</span>.
+      </div>
+
+      <!-- IMAGE PLACEHOLDER: Brook Farm -->
+      <div class="img-placeholder fade-in-section">
+        <span>[ Add Image Here: Brook Farm community illustration ]</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     LEGACY
+════════════════════════════════════════════ -->
+<div class="dark-section" id="legacy">
+  <div class="section section--dark">
+    <p class="section-label fade-in-section">Lasting Impact</p>
+    <h2 class="section-title fade-in-section">The American Renaissance &amp; Beyond</h2>
+
+    <!-- IMAGE PLACEHOLDER: American Renaissance writers -->
+    <div class="img-placeholder img-placeholder--dark fade-in-section">
+      <span>[ Add Image Here: American Renaissance writers — Thoreau, Whitman, Hawthorne, Fuller ]</span>
+    </div>
+
+    <div class="two-col">
+      <div>
+        <p class="fade-in-section">
+          Emerson's greatest achievement may have been the <em>American Renaissance</em> he inspired. As intellectual leader and mentor of the Transcendentalist movement, he influenced some of the most celebrated writers in American literary history <span class="cite" title="McGuire & Wheeler, American History, ABC-CLIO">(McGuire &amp; Wheeler)</span>.
+        </p>
+        <p class="fade-in-section">
+          His educational ideas reached as far as Charles W. Eliot, the president of Harvard, who was shaped by Emerson's vision of what learning could be <span class="cite" title="Myerson, A Historical Guide to Ralph Waldo Emerson">(Myerson)</span>. After decades of being barred from Harvard following his controversial Divinity School Address, Emerson was eventually welcomed back — elected to the Board of Overseers and invited to lecture once more <span class="cite" title="McGuire & Wheeler, American History, ABC-CLIO">(McGuire &amp; Wheeler)</span>.
+        </p>
+        <p class="fade-in-section">
+          After the Civil War, as other Transcendentalists moved on or passed away, Emerson became the enduring face of the movement — though some lamented that this concentrated fame came at the cost of Transcendentalism's original communal spirit <span class="cite" title="Gura, Transcendentalism and Social Reform, Gilderlehrman.org">(Gura)</span>.
+        </p>
+      </div>
+
+      <div>
+        <p class="fade-in-section legacy-writers-label">Writers &amp; Thinkers Influenced by Emerson:</p>
+        <div class="influence-grid fade-in-section">
+          <span class="influence-tag">Henry David Thoreau</span>
+          <span class="influence-tag">Nathaniel Hawthorne</span>
+          <span class="influence-tag">Walt Whitman</span>
+          <span class="influence-tag">Margaret Fuller</span>
+          <span class="influence-tag">Bronson Alcott</span>
+          <span class="influence-tag">George Ripley</span>
+          <span class="influence-tag">Orestes Brownson</span>
+          <span class="influence-tag">James Freeman Clarke</span>
+        </div>
+        <p class="fade-in-section legacy-cite-line">
+          <span class="cite" title="Hankins, The Second Great Awakening and the Transcendentalists">(Hankins)</span>
+          <span class="cite" title="McGuire & Wheeler, American History, ABC-CLIO">(McGuire &amp; Wheeler)</span>
+        </p>
+
+        <div class="ornamental-rule fade-in-section"><span>✦</span></div>
+
+        <p class="fade-in-section">
+          Today, Emerson is considered the father of American literature — a title that reflects not just his own extraordinary output, but the entire generation of writers and thinkers he brought into being through the force of his ideas <span class="cite" title="McGuire & Wheeler, American History, ABC-CLIO">(McGuire &amp; Wheeler)</span>.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════
+     WORKS CONSULTED
+════════════════════════════════════════════ -->
+<div class="works-section" id="works">
+  <div class="works-inner">
+    <p class="section-label fade-in-section">Bibliography</p>
+    <h2 class="section-title works-title fade-in-section">Works Consulted</h2>
+
+    <div class="works-list">
+      <div class="work-item fade-in-section">
+        <span class="work-num">1</span>
+        <p class="work-cite">McGuire, William, and Leslie Wheeler. "Ralph Waldo Emerson." <em>American History</em>, ABC-CLIO, 2026, americanhistory.abc-clio.com/Search/Display/246759. Accessed 17 Mar. 2026.</p>
+      </div>
+      <div class="work-item fade-in-section">
+        <span class="work-num">2</span>
+        <p class="work-cite">Hankins, Barry. <em>The Second Great Awakening and the Transcendentalists</em>. Westport, Conn., Greenwood Press, 2004.</p>
+      </div>
+      <div class="work-item fade-in-section">
+        <span class="work-num">3</span>
+        <p class="work-cite">Gura, Philip F. "Transcendentalism and Social Reform." <em>Gilder Lehrman Institute of American History</em>, Gilderlehrman.org, 2024, www.gilderlehrman.org/history-resources/essays/transcendentalism-and-social-reform.</p>
+      </div>
+      <div class="work-item fade-in-section">
+        <span class="work-num">4</span>
+        <p class="work-cite">Myerson, Joel. <em>A Historical Guide to Ralph Waldo Emerson</em>. New York, Oxford University Press, 2000.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <p>Ralph Waldo Emerson &ensp;·&ensp; Transcendentalism &ensp;·&ensp; American Reform Movement</p>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>

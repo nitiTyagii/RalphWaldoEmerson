@@ -1,79 +1,79 @@
-// Intersection Observer for scroll animations
-const observerOptions = {
-    threshold: 0.1,
-    rootMargin: '0px 0px -50px 0px'
-};
+/* ═══════════════════════════════════════════════════════════
+   script.js — Ralph Waldo Emerson & Transcendentalism
+   ═══════════════════════════════════════════════════════════ */
 
-const observer = new IntersectionObserver((entries) => {
+/* ─── 1. NAVBAR: fade in on scroll ─── */
+const navbar = document.getElementById('navbar');
+
+window.addEventListener('scroll', () => {
+  navbar.classList.toggle('scrolled', window.scrollY > 60);
+});
+
+/* ─── 2. MOBILE NAV TOGGLE ─── */
+const navToggle = document.getElementById('navToggle');
+const navLinks  = document.getElementById('navLinks');
+
+navToggle.addEventListener('click', () => {
+  navLinks.classList.toggle('open');
+});
+
+navLinks.querySelectorAll('a').forEach(a => {
+  a.addEventListener('click', () => navLinks.classList.remove('open'));
+});
+
+/* ─── 3. HERO REVEAL — fire immediately on load ─── */
+window.addEventListener('DOMContentLoaded', () => {
+  // Stagger the hero elements in right away
+  document.querySelectorAll('.reveal').forEach((el, i) => {
+    // Small setTimeout so the browser has painted first
+    setTimeout(() => {
+      el.classList.add('is-visible');
+    }, 80 + i * 60);
+  });
+});
+
+/* ─── 4. SCROLL-TRIGGERED FADE-IN (IntersectionObserver) ─── */
+const observer = new IntersectionObserver(
+  (entries) => {
     entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.style.animationPlayState = 'running';
-            observer.unobserve(entry.target);
-        }
+      if (entry.isIntersecting) {
+        entry.target.classList.add('is-visible');
+        // Once visible, stop watching
+        observer.unobserve(entry.target);
+      }
     });
-}, observerOptions);
+  },
+  {
+    threshold: 0.12,       // element must be 12% visible before triggering
+    rootMargin: '0px 0px -40px 0px'  // trigger slightly before fully in view
+  }
+);
 
-// Observe all fade-in-up elements
-document.querySelectorAll('.fade-in-up').forEach(element => {
-    observer.observe(element);
+// Observe everything with the fade-in class
+document.querySelectorAll('.fade-in-section').forEach(el => {
+  observer.observe(el);
 });
 
-// Smooth scroll for navigation links
+/* ─── 5. FLIP CARDS — toggle on click (for touch / mobile) ─── */
+document.querySelectorAll('.card').forEach(card => {
+  card.addEventListener('click', () => {
+    card.classList.toggle('flipped');
+  });
+});
+
+/* ─── 6. SMOOTH SCROLL with offset for fixed navbar ─── */
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
-        if (target) {
-            target.scrollIntoView({
-                behavior: 'smooth',
-                block: 'start'
-            });
-        }
+  anchor.addEventListener('click', function (e) {
+    const target = document.querySelector(this.getAttribute('href'));
+    if (!target) return;
+    e.preventDefault();
+
+    const navbarHeight = navbar.offsetHeight;
+    const targetTop    = target.getBoundingClientRect().top + window.scrollY;
+
+    window.scrollTo({
+      top: targetTop - navbarHeight - 16,  // 16px breathing room
+      behavior: 'smooth'
     });
-});
-
-// CTA Button click handler
-document.querySelector('.cta-button').addEventListener('click', () => {
-    document.querySelector('#philosophy').scrollIntoView({
-        behavior: 'smooth',
-        block: 'start'
-    });
-});
-
-// Add scroll animation to navbar
-window.addEventListener('scroll', () => {
-    const navbar = document.querySelector('.navbar');
-    if (window.scrollY > 50) {
-        navbar.style.boxShadow = '0 5px 20px rgba(0, 0, 0, 0.2)';
-    } else {
-        navbar.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.1)';
-    }
-});
-
-// Parallax effect for hero section (optional enhancement)
-window.addEventListener('scroll', () => {
-    const hero = document.querySelector('.hero');
-    const scrollPosition = window.scrollY;
-    hero.style.backgroundPosition = `0 ${scrollPosition * 0.5}px`;
-});
-
-// Add staggered animation delays to cards
-document.querySelectorAll('.philosophy-cards .card').forEach((card, index) => {
-    card.style.animationDelay = `${index * 0.15}s`;
-});
-
-document.querySelectorAll('.works-grid .work-item').forEach((item, index) => {
-    item.style.animationDelay = `${index * 0.15}s`;
-});
-
-document.querySelectorAll('.legacy-grid .legacy-item').forEach((item, index) => {
-    item.style.animationDelay = `${index * 0.15}s`;
-});
-
-// Page load animation
-document.addEventListener('DOMContentLoaded', () => {
-    document.body.style.opacity = '1';
-    document.querySelectorAll('.fade-in').forEach(el => {
-        el.style.animationPlayState = 'running';
-    });
+  });
 });
