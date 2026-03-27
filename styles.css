@@ -605,6 +605,20 @@ body::before {
   opacity: 0.7;
   text-align: center;
   padding: 1rem;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.img-placeholder img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  border-radius: 3px;
 }
 
 /* ═══════════════════════════════════════════════════════════
@@ -713,7 +727,7 @@ body::before {
 }
 
 .timeline-desc {
-  font-size: 1rem;
+  font-size: 1.5rem;
   color: rgba(245, 238, 220, 0.65);
   line-height: 1.8;
 }
@@ -745,7 +759,7 @@ body::before {
 .cards-intro {
   max-width: 68ch;
   color: var(--muted);
-  font-size: 1.05rem;
+  font-size: 1.4rem;
   line-height: 1.9;
   margin-top: 0.5rem;
 }
@@ -789,7 +803,8 @@ body::before {
   align-items: center;
   text-align: center;
   padding: 2.5rem 2rem;
-  border: 1px solid rgba(200, 149, 42, 0.3);
+  border: 3px solid rgb(212, 136, 83, 0.3);
+  border-radius: 1rem;
 }
 
 .card-front {
@@ -842,7 +857,7 @@ body::before {
 }
 
 .card-back p {
-  font-size: 0.93rem;
+  font-size: 1rem;
   line-height: 1.8;
   color: rgba(245, 238, 220, 0.82);
   margin: 0;
