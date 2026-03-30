@@ -5,8 +5,8 @@ strong {
    font-wieght: 800;
 }
 mark {
-  background-color: rgba(86, 57, 68, 0.21);
-  color: navy; 
+  background-color: #d9eefa;
+  color: black; 
 }
 /* ─── TOKENS ─── */
 :root {
