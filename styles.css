@@ -4,6 +4,10 @@
 strong {
    font-wieght: 800;
 }
+mark {
+  background-color: white; /* Tomato red color */
+  color: navy; /* Optional: Change text color for better contrast */
+}
 /* ─── TOKENS ─── */
 :root {
   --ink: #1a1208;
